@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .background{
+            width: auto;
+            height:100vh;
+            background: url(https://cdn.wallpapersafari.com/46/12/QwTKBP.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;
+        }
+        .container{
+            width: 350px;
+            height: 350px;
+            background-color: transparent;
+            backdrop-filter: blur(8px);
+            margin: auto;
+            color: white;
+            transform: translateY(45%);            
+        }
+        input{
+            width: 320px;
+            height: 40px;
+            margin: 8px;
+            background-color:rgb(157, 176, 238);
+            border: none;
+            color: rgb(250, 248, 248);
+        }
+        input[type=button]{
+            background-color: blueviolet;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="background">
+        <table class="container" >
+            <tr >
+                    <td align="center" ><h1>Login</h1>
+                    <br>
+                    <input type="text" placeholder="USERNAME">
+                    <br>
+                    <input type="text" placeholder="PASSWORD">
+                    <br>
+                    <input type="button" value="Login">
+                    <br>
+                    <p >not a member?Sing Up</p>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>

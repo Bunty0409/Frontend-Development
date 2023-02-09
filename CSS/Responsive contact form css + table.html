@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive contact form</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(45deg,rgb(54, 210, 238),rgb(180, 11, 172));
+            background-repeat: no-repeat;
+        }
+        .center{
+            width: 800px;
+            height: 400px;
+            margin: auto;
+            transform: translateY(15%);
+            padding-left: 65px;
+            background-color: white;
+
+        }
+        
+        input{
+            border: none;
+        }
+        hr{
+            border: 1px solid rgb(199, 189, 189);
+            width: 80%;
+            margin-left: 0px;
+        }
+        h1 {
+  font-family: sans-serif;
+  background: linear-gradient(45deg,rgb(54, 210, 238),rgb(180, 11, 172));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-left: 0px;
+}
+.button{
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(45deg,rgb(54, 210, 238),rgb(180, 11, 172));
+    color: white;
+    margin-bottom: 10px;
+}
+        
+    </style>
+</head>
+<body>
+    <table class="center">
+        <tr><td colspan="2"><h1 style="margin-left: 103px;" >Responsive Contact Us Form</h1></td></tr>
+        <tr><td><input  type="text" placeholder="First Name"><hr></td>
+        <td><input type="text" placeholder="Last Name"><hr></td></tr>
+        <tr><td><input  type="text" placeholder="Email Address"><hr></td>
+            <td><input type="text" placeholder="Website Name"><hr></td></tr>
+        <tr><td colspan="2"><input  type="text" placeholder="Write Your Messge"><hr style="width: 90%;"></td></tr>
+        <tr><td><input class="button" type="button" value="SUBMIT"></td></tr> 
+        <tr></tr>
+    </table>
+    
+</body>
+</html>

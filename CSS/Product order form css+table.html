@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table task css+html</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .center{
+            background: url(https://imagekit.io/blog/content/images/2019/12/image-optimization.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+           
+            
+        }
+        table{
+            color: white;
+            font-size: smaller;
+        }
+        input{
+            height: 20px;
+        }
+        .border{
+            border: 2px white solid;
+            padding: 20px;
+            background-color: rgba(6, 71, 114, 0.5);
+        }
+        h1{
+            color: rgb(247, 247, 247);
+        }
+        .abc{
+            margin-right: 5px;
+        }
+        input[type=button]{
+            width: 120px;
+            height: 30px;
+            margin-right: 10px;
+            border: none;
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <H1>PRODUCT ORDER FORM</H1>
+        <div class="border">
+        <table cellspacing="15px">
+        
+        <tr>
+            <td>FIRST NAME    :</td>
+            <td><input type="text" placeholder="Your first name"></td>
+            <td>LAST NAME   :</td>
+            <td><input type="text" placeholder="Your last name"></td>
+        </tr>
+        <tr><td>EMAIL ADDRESS :</td>
+        <td><input type="text" placeholder="mail@example.com"></td></tr>
+        <tr><td>PHONE NUMBER :</td>
+        <td><input class="abc" style="width: 35px"type="text" placeholder="+???">
+            <input style="width: 110px;" type="text" placeholder="+????????????????????"></td>
+    <td></td></tr>
+    <tr><td >BILLING ADDRESS :</td>
+    <td colspan="3"><input style="width: 99%" type="text" placeholder="Billing address"></td></tr>
+    <tr><td>YOUR ADDRESS :</td>
+        <td colspan="3"><input style="width: 99%" type="text" placeholder="Your address"></td></tr>
+        <tr>
+            <td>CITY    :</td>
+            <td><input type="text" placeholder="Your City"></td>
+            <td>STATE/PROVINCE  :</td>
+            <td><input type="text" placeholder="Your State or Province"></td>
+        </tr>
+        <tr>
+            <td>ZIPCODE    :</td>
+            <td><input type="text" placeholder="Zip code"></td>
+            <td>COUNTRY  :</td>
+            <td><input type="text" placeholder="Country"></td>
+        </tr>
+        <tr><td></td><td colspan="4"><input style="background-color: rgb(125, 160, 236);" type="button" value="PLACE ORDER"><input style="background-color: rgb(204, 143, 31);" type="button" value="RESET"></td>
+        </tr>
+
+    </table></div>
+        </div>
+</body>
+</html>
