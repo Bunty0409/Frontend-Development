@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission to Deep Space</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mainbox{
+            width: 900px;
+            height: 500px;
+            background: url(https://4.bp.blogspot.com/-htgdz_hTKRI/XUuq3JIyMII/AAAAAAAAKiA/qJabYF460sMshzeK1onJKvkNnT9kXjOIgCLcBGAs/w919/astronaut-outer-space-stars-planet-uhdpaper.com-4K-4.26-wp.thumbnail.jpg);
+            display:flex;
+            flex-direction: row;
+        }
+        .mission{
+            width: 40%;
+            height: 100%;
+            background:rgba(22, 21, 21,0.8);
+            border-right: 5px solid rgb(65, 65, 60);
+            
+        }
+        h1{
+            margin: 0px;
+            padding-top: 90px;
+            padding-left: 20px;
+            color: white;
+            font-family: sans-serif;
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: lighter;
+            
+        }
+        h3{
+            text-align: center;
+            margin-top: 60px;
+            color: white;
+            font-family: sans-serif;
+            font-weight: lighter;
+        }
+        h2{
+            margin-top: 70px;
+            color: white;
+            font-family: sans-serif;
+            font-weight: lighter;
+            text-align: center;
+        }
+        .big-circle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 130px;
+            height: 130px;
+            background-color:transparent;
+            border: 5px solid rgb(50, 210, 238);
+            border-radius: 50%;
+            margin-top: 70px;
+            margin-left: 30%;
+            position: relative;
+        }
+        
+        .small-circle{
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            background-color:transparent;
+            border: 5px solid rgb(50, 210, 238);
+            border-radius: 50%;
+            position: absolute;
+        }
+        .extra-small{
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-color:transparent;
+            border: 5px solid rgb(50, 210, 238);
+            border-radius: 50%;
+            margin-top: 0px;
+            position: absolute;
+            margin-left: 190px;
+            transform: translateY(67px);
+            background-clip: border-box;
+
+        }
+        .signup-page{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            background-color:rgb(7, 27, 7,0.5);
+        }
+        input{
+            width: 300px;
+            height: 40px;
+            color: white;
+            border: none;
+            border-bottom: 2px  solid rgb(50, 210, 238);
+            outline: none;
+            margin: 10px auto;
+            background: rgb(34, 33, 33,0.5);
+        }
+        ::placeholder{
+            color: rgb(190, 180, 180);
+        }
+        button{
+            width: 120px;
+            height: 40px;
+            margin: 0px auto;
+            background: rgb(34, 33, 33,0.5);
+            border: 3px solid rgb(50, 210, 238);
+            color: white;
+            margin-top: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+        <div class="mission">
+            <h1>Mission To Deep Space</h1>
+            <div class="extra-small"></div>
+            <div class="big-circle">
+            <div class="small-circle"> </div>
+             </div>
+            <h3>The Future Is Here</h3>
+        </div>
+        <div class="signup-page">
+            <h2>Sing Up</h2>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <input type="email" placeholder="Email">
+            <button>Join</button>
+        </div>
+    </div>
+    
+</body>
+</html>
