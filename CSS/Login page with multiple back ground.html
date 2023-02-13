@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page with multiple background</title>
+    <style>
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(45deg, rgba(46, 3, 39, 0.95), rgba(4, 4, 82,0.95)),url(https://www.creative-tim.com/blog/content/images/size/w960/wordpress/2017/09/mia-baker-322594.jpg)
+    ;
+    background-size:100% 100% ,100% 100%;
+    background-repeat: no-repeat,no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.main-box{
+    width: 50%;
+    height: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    box-shadow:0px 0px 5px rgb(255, 255, 255);
+}
+.hello-world{
+    width: 50%;
+    height: 100%;
+    background:  linear-gradient(45deg, rgba(132, 3, 192, 0.5), rgba(161, 7, 204, 0.5)),url(https://www.creative-tim.com/blog/content/images/size/w960/wordpress/2017/09/mia-baker-322594.jpg);
+    background-size: 100% 100%,cover;
+    background-repeat: no-repeat,no-repeat;
+    background-position:center center;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+h1{
+    margin: 0px;
+    color: white;
+    font-size: 5rem;
+    padding-top: 50px;
+
+}
+.content{
+    color: white;
+}
+.login-instruction{
+    color: white;
+    font-size: 1rem;
+}
+.facebook-button{
+    width: 80px;
+    height: 40px;
+    background-color: rgb(8, 8, 167);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+
+
+}
+.twitter-button{
+    width: 180px;
+    height: 40px;
+    background-color: rgb(53, 138, 248);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+h3{
+    font-size: 2rem;
+    margin-bottom: 0px;
+}
+.login-page{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0px 30px;
+
+}
+.forgot-password{
+    padding-left: 115px;
+    box-sizing: border-box;
+}
+input{
+    height: 40px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+}
+.login-button{
+    margin-left: 170px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(29, 236, 29);
+    margin-top: 20px;
+}
+.login-button:hover{
+    box-shadow:0px 0px 10px rgb(0, 0, 0);
+}
+.checkbox{
+    display: inline-block;
+    font-size: 0.7rem;
+    color: grey;
+}
+input[type=checkbox]{
+    accent-color: rgb(60, 218, 12);
+}
+    </style>
+</head>
+<body>
+    <div class="main-box">
+        <div class="hello-world">
+            <h1>Hello world.</h1>
+            <P class="content">Lorem ipsum, dolor sit milique consequatur possimus esse voluptecto quas nam!</P>
+            <p class="login-instruction">Login with social media</p>
+            <button class="facebook-button">Facebook</button>
+            <button class="twitter-button">Login with twitter</button>
+        </div>
+        <div class="login-page">
+            <h3>Login</h3>
+            <p style="color: grey;margin-right: -9px;">Don't have an account? Create your account, it takes less than a minute</p>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <div class="checkbox"><input style="height: auto;" type="checkbox"> Remember me<span class="forgot-password">Forgot Password?</span></div>
+            <button class="login-button">Login</button>
+        </div>
+    </div>
+    
+</body>
+</html>
