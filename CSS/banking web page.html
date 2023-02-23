@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banking web page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(329deg,blue,pink, blue);
+            backdrop-filter: blur(150px);
+        }
+        .main{
+            width: 70%;
+            height: 80%;
+            background:linear-gradient(150deg ,pink,blue,blue);
+            overflow: hidden;
+            position: relative;
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.11);
+        }
+        .circle-1{
+            
+            position: absolute;
+            top: 139px;
+            right: -145px;
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(#a1cee1,#d12b7f);
+            border-radius: 50%;
+            z-index: 3;
+            
+        }
+        .circle-01{
+            
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 400px;
+            height: 400px;
+            background:linear-gradient(#647beb,#e374ac);
+            border-radius: 50%;
+            z-index: 3;
+            
+        }
+        .outer-circle{
+            margin: -40px;
+            position: absolute;
+            top: 0;
+            right: 0px;
+            width: 480px;
+            height: 480px;
+            background-color: transparent;
+            /* background: linear-gradient(#01090c,#3a2c33); */
+            border-radius: 50%;
+            border: 5px solid rgb(253 188 200 / 49%);
+            z-index: 1;
+        
+
+        }
+        .card-1{
+            width: 250px;
+            height: 150px;
+            background-color: rgba(255, 255, 255, 0.116);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 192, 203, 0.411);
+            backdrop-filter: blur(5px);
+            position: absolute;
+            left: -106px;
+            transform: rotate(15deg);
+            z-index: 6;
+        }
+        .circle-betweencard{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%; /*1*/
+            border: 12px solid transparent; /*2*/
+            background: linear-gradient(45deg,rgb(240, 136, 200),blue) border-box; /*3*/
+            -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,  linear-gradient(#fff 0 0); 
+            -webkit-mask-composite: xor; /*5'*/
+            mask-composite: exclude; /*5*/
+            box-sizing: border-box;
+            position: absolute;
+            left: 97px;
+            top: 161px;
+            z-index: 5;
+        }
+        .card-2{
+            width: 220px;
+            height: 130px;
+            background-color: rgba(255, 255, 255, 0.116);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 192, 203, 0.411);
+            backdrop-filter: blur(5px);
+            position: absolute;
+            top: 137px;
+            left: -111px;
+            transform: rotate(-15deg);
+            z-index: 4;
+        }
+        .fa-play{
+            color: #857e7e;
+            position: absolute;
+            top: 11px;
+            left: 17px;
+            font-size: 1.5rem;
+
+
+        }
+        h1{
+            margin: 0;
+            margin-left: 180px;
+            color: white;
+        }
+        h4{
+            color: white;
+            margin: 0;
+            margin-left: 15px;
+            margin-top: 15px;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        
+
+        }
+        h6{
+            color: white;
+            font-size: .6rem;
+            margin: 0px;
+            margin-left: 15px;
+            margin-top: 30px;
+        }
+        h5{
+            color: white;
+            font-size: 1rem;
+            margin: 0px;
+            margin-left: 15px;
+            margin-top: 8px;
+        }
+        .visa{
+            margin: 0;
+            margin-left: 150px;
+            color: white;
+
+        }
+        .num{
+            font-size: 1rem;
+        }
+        .info{
+            font-size: .5rem;
+            margin-top: 20px;
+        }
+        .expires{
+            margin-left: 110px;
+        }
+        .name{
+            font-size: .8rem;
+        }
+        .date{
+            margin-left: 90px;
+        }
+        .circle-2{
+            width: 135px;
+            height: 135px;
+            border-radius: 50%;
+            background: linear-gradient(blue,#cf8290 72%);
+            filter: blur(2px);
+            transform: rotate(45deg);
+            position: absolute;
+            bottom: 59px;
+            left: -103px;
+            z-index: 2;
+        }
+        .cashfly{
+            position: absolute;
+            top: 30px;
+            left: 60px;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+
+        }
+        a{
+            text-decoration: none;
+            margin-right: 30px;
+            color: white;
+            font-size: 0.8rem;
+        }
+        .top-corner{
+            position: absolute;
+            top: 30px;
+            right: 50px;
+        }
+        .singup-button{
+            width: 80px;
+            height: 25px;
+            border-radius: 15px;
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+            font-size: .7rem;
+        }
+        section{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+       .content-1{
+        margin-left: 0px;
+
+        font-size: 3rem;
+       }
+       .content-2{
+        margin-left: 0px;
+        font-size: .8rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: lighter;
+        /* margin-left: 181px; */
+        margin-top: 20px;
+       }
+       .Getstart-button{
+        width: 100px;
+        height: 35px;
+        background-color: rgb(116, 148, 255);
+        border-radius: 20px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        /* margin-left: 181px; */
+        margin-top: 20px;
+        font-size: 0.8rem;
+       }
+       .DownloadApp-button{
+        color: white;
+        background-color: transparent;
+        border: none;
+        margin-left: 10px;
+        font-size: .7rem;
+       }
+       .bottom-line{
+        margin: 0px;
+        position: absolute;
+        left: 0px;
+        bottom: -100px;
+
+       }
+       .small-cicle1{
+        width: 10px;
+        height: 10px;
+        background: linear-gradient(pink,rgb(13, 13, 190));
+        border-radius: 50%;
+        position: absolute;
+        right: 200px;
+        top: 100px;
+       }
+       .small-cicle2{
+        width: 15px;
+        height: 15px;
+        background: linear-gradient(rgb(228, 195, 201),rgb(19, 19, 228));
+        border-radius: 50%;
+        position: absolute;
+        left: 70px;
+        top: 150px;
+       }
+       .small-cicle3{
+        width: 30px;
+        height: 30px;
+        background: linear-gradient(141deg,rgb(219 220 227),rgb(4, 4, 97)70%);
+        border-radius: 50%;
+        position: absolute;
+        left: 334px;
+        bottom: 50px;
+       }
+       .small-cicle4{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /*1*/
+            border: 15px solid transparent; /*2*/
+            background: linear-gradient(45deg,rgb(240, 136, 200),purple,blue) border-box; /*3*/
+            -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,  linear-gradient(#fff 0 0); 
+            -webkit-mask-composite: xor; /*5'*/
+            mask-composite: exclude; /*5*/
+            box-sizing: border-box;
+            position: absolute;
+            left: -66px;
+            top: 67px;
+            /* z-index: 5; */
+        }
+        .small-cicle5{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%; /*1*/
+            border: 10px solid transparent; /*2*/
+            background: linear-gradient(45deg,rgb(240 136 200)60%,#373776) border-box; /*3*/
+            -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,  linear-gradient(#fff 0 0); 
+            -webkit-mask-composite: xor; /*5'*/
+            mask-composite: exclude; /*5*/
+            box-sizing: border-box;
+            position: absolute;
+            right: 272px;
+            top: 108px;
+            /* z-index: 5; */
+        }
+        .small-cicle6{
+        width: 15px;
+        height: 15px;
+        background: linear-gradient(rgb(228, 195, 201),rgb(110 21 91));
+        border-radius: 50%;
+        position: absolute;
+        left: 560px;
+        top: 147px;
+       }
+       .small-cicle7{
+        width: 15px;
+        height: 15px;
+        background: linear-gradient(38deg,rgb(150 15 193)30%,rgb(228, 195, 201));
+        border-radius: 50%;
+        position: absolute;
+        left: 540px;
+        bottom: 112px;
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="small-cicle1"></div>
+        <div class="small-cicle2"></div>
+        <div class="small-cicle3"></div>
+        <div class="small-cicle4"></div>
+        <div class="small-cicle5"></div>
+        <div class="small-cicle6"></div>
+        <div class="small-cicle7"></div>
+        <div><span class="cashfly"> <i class="fa-duotone fa-planet-ringed"></i> cashfly</span><span class="top-corner"><a href="">About</a><a href="">Product</a><a href="">Pricing</a><button class="singup-button">Sing Up</button></span></div>
+        <section><h1 class="content-1">Payments<br> have never<br> been easier</h1><h6 class="content-2">Discover the easiest way to manage your personal finances.<br> Save, analyse, invest, withdraw, send and receive money all<br> over the world with no limits!</h6>
+        <button class="Getstart-button">Get start</button><button class="DownloadApp-button">Download App <i class="fa-solid fa-download"></i><h6 class="bottom-line">Learn more about digital banking <u style="color: purple;"> here</u></h6></button></section>
+        <div class="circle-1">
+            <div class="circle-01"></div>
+            <div class="outer-circle"></div>
+             <div class="card-1">
+                <h1>visa</h1>
+                <h4>3548 59487 6489 4886</h4>
+                <h6>CARD HOLDER<span class="expires">expires</span></h6>
+                <h5>Bunty Javia<span class="date">06/26</span></h5>
+             </div>      
+                     <div class="circle-betweencard"></div>
+            <div class="card-2">
+                <h1 class="visa">visa</h1>
+                <h4 class="num">3548 59487 6489 4886</h4>
+                <h6 class="info">CARD HOLDER<span class="expires" style="margin-left: 100px;">expires</span></h6>
+                <h5 class="name">Bunty Javia<span class="date" style="margin-left: 92px;">06/26</span></h5></div>
+                <div class="circle-2"></div>
+
+
+            
+
+        </div>
+    </div>
+</body>
+</html>
