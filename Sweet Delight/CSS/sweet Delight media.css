@@ -1,0 +1,106 @@
+@media(max-width:500px) {
+
+    .fix-box1,
+    .fix-box3 {
+        display: none;
+    }
+
+    .fix-box2 {
+        margin: 0px auto;
+    }
+
+    .box2 {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .box3 {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .box4 {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .box5 {
+        width: 100%;
+    }
+
+    .section6 .blog-img {
+        display: none;
+    }
+
+    .box7 {
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        width: 100%;
+    }
+
+    .box7 .a {
+        margin-left: -61%;
+        margin-bottom: 50px;
+    }
+
+    .box7 .b {
+        width: 100%;
+    }
+
+    .section7 .box7 .b button {
+        margin-left: 15%;
+    }
+
+    .box8 {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .section9 .box9 .box9-content {
+        width: 100%;
+    }
+
+    .section9 .box9 .box9-content h1 {
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    .section9 .box9 .box9-content h1 img {
+        width: 60%;
+    }
+
+    .section13 .box13-14 {
+        width: 70%;
+        flex-wrap: wrap;
+    }
+
+    .section14 .box14 img {
+        display: none;
+    }
+
+    .section14 .box14 button {
+        margin: 0px 35%;
+    }
+}
+
+@keyframes anime {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
+
+@keyframes animeo {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}

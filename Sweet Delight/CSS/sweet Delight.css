@@ -1,0 +1,679 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.abc {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background: url(../IMAGES/landing-top-img-8.png);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -3;
+
+}
+
+.back-text {
+    color: rgba(255, 192, 203, 0.247);
+    font-size: 8rem;
+    letter-spacing: 20px;
+    font-weight: lighter;
+    word-spacing: 20px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+}
+
+.fix-box1 {
+    width: 362px;
+    height: 311px;
+    object-fit: 100% 100%;
+}
+
+.fix-box1-img1 {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 85px;
+    left: -10px;
+}
+
+.fix-box3-img1 {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: -215px;
+    left: 30px;
+}
+
+.fix-box2 {
+    width: 450px;
+    height: 600px;
+    object-fit: 100% 100%;
+    margin-top: 0px;
+    position: relative;
+}
+
+.y {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    text-align: center;
+}
+
+.y h3 {
+    color: white;
+    font-weight: 100;
+}
+
+.y h1 {
+    font-family: Cormorant;
+    font-weight: lighter;
+    color: white;
+    font-weight: 100;
+    font-size: 5.5rem;
+}
+
+.y button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: #fff;
+    width: 250px;
+}
+
+.fix-box3 {
+    width: 307px;
+    height: 291px;
+    object-fit: 100% 100%;
+    margin-bottom: 150px;
+    position: relative;
+}
+
+h4 {
+    font-family: Cormorant;
+    text-align: center;
+    font-weight: lighter;
+    margin: 15px 0px;
+    font-size: 27px;
+    color: #241c10;
+
+}
+
+h5 {
+    font-family: heebo;
+    text-align: center;
+    font-size: 11px;
+    font-weight: lighter;
+    color: #8a7665;
+    margin-bottom: 15px;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 600px;
+    background-color: #fefbf3;
+}
+
+.tag-line {
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: var(--qode-main-color);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .15em;
+    display: block;
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+h2 {
+    font-family: Cormorant, serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: #241c10;
+    font-size: 67px;
+    line-height: 1.1em;
+    letter-spacing: .02em;
+    font-weight: 1000;
+    margin: 25px 0;
+    z-index: 2;
+    position: relative;
+
+}
+
+@font-face {
+    font-family: Quentin;
+    src: url(../CSS/Quentin.otf);
+}
+
+.delight {
+    position: absolute;
+    right: -1em;
+    bottom: -0.2em;
+    font-family: Quentin, sans-serif;
+    color: #f2e4cd;
+    text-transform: capitalize;
+    z-index: -1;
+    font-size: 1.27em;
+    white-space: nowrap;
+}
+
+
+.section1,
+.section2,
+.section3,
+.section4,
+.section5,
+.section6,
+.section7,
+.section9,
+.section10,
+.section12,
+.section13,
+.section14 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.box2 {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item1-img1 img {
+    width: 348px;
+    height: 350px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.item1-img1 img:hover {
+    transform: translateY(-10px);
+}
+
+.section3 {
+
+    margin: 50px 0px;
+
+}
+
+.box3 {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.box4 {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box4 .item1-img1 img {
+    width: 350px;
+    height: 198px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.box4 .logo {
+    object-fit: contain;
+    width: 350px;
+    height: 198px;
+}
+
+.box4 .logo img {
+    margin: 50px 100px;
+}
+
+.section5 {
+
+    object-fit: contain;
+    object-position: top;
+}
+
+.box5 {
+    width: 85%;
+
+}
+
+.section5 .box5 img {
+    width: 100%;
+    height: 162px;
+}
+
+.box6 {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+button {
+
+    font-family: Heebo, sans-serif;
+    font-size: 13px;
+    line-height: 2em;
+    font-weight: 400;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+
+    padding: 13px 38px 12px;
+    margin-top: 10px;
+}
+.section6{
+    background-color: #fff;
+}
+
+
+.section6 .blog {
+    width: 530px;
+    height: 345px;
+    position: relative;
+}
+
+
+
+.section6 .box6 .blog .tag-line {
+    text-transform: uppercase;
+    color: var(--qode-main-color);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .15em;
+    display: block;
+    margin-bottom: 13px;
+    text-align: left;
+}
+
+h2 {
+    font-family: Cormorant, serif;
+    text-transform: uppercase;
+    color: #241c10;
+    font-size: 67px;
+    line-height: 1.1em;
+    letter-spacing: .02em;
+    font-weight: 300;
+    margin: 25px 0;
+    position: relative;
+
+}
+
+.Stories {
+    position: absolute;
+    top: 100px;
+    right: 25px;
+    font-family: Quentin, sans-serif;
+    color: #f2e4cd;
+    text-transform: capitalize;
+    font-size: 1.27em;
+    z-index: -1;
+
+}
+
+.section6 .blog-img {
+    display: flex;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin-left: 100px;
+}
+
+.section6 .blog-img .blog-img1,
+.blog-img2 {
+    width: 424px;
+    height: 450px;
+    padding-left: 20px;
+}
+
+
+.box7 {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background: url(../IMAGES/landing-top-img-8.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin: 50px 0px;
+    padding: 100px;
+    background-color: rgb(44, 61, 44);
+    width: 85%;
+    box-sizing: border-box;
+
+}
+
+
+
+.a {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.box7-img1 {
+    width: 343px;
+    height: 256px;
+}
+
+.box7-img1 img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.box7-img2 img {
+    width: 377px;
+    height: 175px;
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+}
+
+.section7 .box7 .b p {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+.section7 .box7 .b h1 {
+    font-family: Cormorant;
+    margin: 0;
+    font-size: 67px;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+}
+
+.section7 .box7 .b button {
+    width: 200px;
+    margin: 0px 25%;
+    margin-top: 10px;
+
+}
+
+.b {
+    width: 40%;
+    height: 300px;
+}
+
+.section8 .box8 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec8-box1 {
+    width: 380px;
+    height: 455px;
+    position: relative;
+}
+
+.sec8-box1 .sec8-img1 img {
+    width: 380px;
+    height: 455px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.sec8-box1 .sec8-img2 img {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+}
+
+.sec8-box1 .sec8-img3 img {
+    width: 155px;
+    height: 85px;
+    position: absolute;
+    bottom: -10px;
+    right: -95px;
+    z-index: -1;
+}
+
+.sec8-box3 .sec8-img4 img {
+    width: 380px;
+    height: 480px;
+
+}
+
+.sec8-box2 {
+    width: 500px;
+    height: 480px;
+    display: flex;
+    align-items: left;
+
+}
+
+.sec8-box2 .c {
+    width: 480px;
+    height: 480px;
+    text-align: right;
+    padding-top: 100px;
+
+}
+
+.section8 .sec8-box2 .c p {
+    font-size: 16px;
+    color: #8a7665;
+
+}
+
+.section8 .sec8-box2 h1 {
+    font-family: Cormorant;
+
+    font-weight: lighter;
+    font-size: 67px;
+}
+
+.section8 .sec8-box2 .c button {
+    width: 200px;
+    margin-top: 20px
+}
+
+.section9 {
+    width: 100%;
+    height: 600px;
+    background: url(../IMAGES/landing-parallax.jpg);
+    background-size: cover;
+
+}
+
+.box9 {
+    width: 85%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box9-content {
+    width: 70%;
+    height: 300px;
+
+}
+
+.section9 .box9 .box9-content p {
+    text-align: center;
+    margin: 0px;
+    color: white;
+}
+
+.section9 .box9 .box9-content h1 {
+    text-align: center;
+    margin: 0px;
+    font-size: 5rem;
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.section9 .box9 .box9-content h1 img {
+    text-align: center;
+    margin: 0px;
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+}
+
+.section10 {
+
+    padding: 40px 0px;
+}
+
+.Premade {
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    font-family: Quentin, sans-serif;
+    color: #f2e4cd;
+    font-size: 1.27em;
+    z-index: -1;
+}
+
+.section11 {
+    padding: 0px;
+    padding-bottom: 100px;
+
+}
+
+.section11 {
+    background: url(../IMAGES/landing-inner-pages.png);
+    width: 100%;
+    height: 600px;
+    position: relative;
+    animation: anime 15s linear infinite;
+}
+
+.section11::after {
+    content: " ";
+    width: 100%;
+    height: 600px;
+    background: url(https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/04/landing-inner-pages.png);
+    position: absolute;
+
+    top: 0;
+    left: 100%;
+    animation: animeo 150s smooth linear infinite;
+
+}
+
+
+.section12 {
+    background-color: #fff;
+    padding: 40px 0px;
+}
+
+.section12 .box12 {
+    width: 85%;
+}
+
+.section12 .box12 h2 {
+    position: relative;
+
+    text-align: center;
+}
+
+.section12 .box12 h2 .delight {
+    position: absolute;
+    left: 110px;
+    top: 110px;
+}
+.section13{
+    background-color: #fff;
+}
+.section13 .box13-14 {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section13 .box13-14 .sec13-14-box {
+    width: 366px;
+    height: 205px;
+    margin-top: 20px;
+}
+
+.section13 .box13-14 .sec13-14-box img {
+    padding-left: 42%;
+
+}
+
+.section13 .box13-14 .sec13-14-box h5 {
+    font-family: cormorant;
+    color: black;
+    font-size: 27px;
+    padding-top: 20px;
+}
+
+.section13 .box13-14 .sec13-14-box p {
+    font-family: heebo;
+    color: #63605a;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.section14 {
+
+    background-image: url(../IMAGES/landing-bottom-img.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.section14 .box14 {
+    width: 85%;
+}
+
+.section14 .box14 p {
+    font-family: heebo;
+    color: white;
+    text-align: center;
+}
+
+.section14 .box14 h1 {
+    font-family: cormorant;
+
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 100;
+    position: relative;
+}
+
+.section14 .box14 img {
+    position: absolute;
+    bottom: -50px;
+    right: 60px;
+}
+
+.section14 .box14 button {
+    margin: 20px 42%;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
