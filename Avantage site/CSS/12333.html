@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{scroll-behavior: smooth;}
+
+        body 
+        {
+            margin: 0;
+        }
+        .header
+        {
+            height: 100px;
+            width: 100%;
+            background: gray;
+            /* position: fixed;
+            top:0; */
+        }
+        .nav
+        {
+            height: 50px;
+            background: lightblue;
+
+            /* margin-top: 100px; */
+            text-align: center;
+            /* line-height: 50px; */
+        }
+
+        ul 
+        {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu 
+        {
+            list-style: none;
+            /* border: 2px solid green; */
+            display: inline;
+            margin-right:20px;
+
+            background: greenyellow;
+            position: relative;
+        }
+        a
+        {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        .dropdown 
+        {
+            display: none;
+            position: absolute;
+            top:100%;
+            left:0;
+        }
+
+        .dropdown li 
+        {
+            list-style: none;
+        }
+
+        .menu:hover  .dropdown 
+        {
+            display: block;
+        }
+        .content
+        {
+            height: 300px;
+            background: coral;
+        }
+        .c2 
+        {
+            background: darkgoldenrod;
+        }
+
+        .c4 
+        {
+            background: darkolivegreen;
+        }
+
+
+        .footer
+        {
+            height: 150px;
+            background: greenyellow;
+        }
+
+        .topBtn
+        {
+           background: #000;
+           color: #fff;
+           padding: 20px 40px;
+           border-radius: 10px;
+           position: fixed;
+           bottom:5%;
+           right:5%;
+
+        }
+       
+    </style>
+</head>
+<body>
+
+        <div class="header">Header</div>
+        <div class="nav">
+            <ul >
+                <li class="menu"><a href="">Home</a></li>
+                <li class="menu"><a href="#about">About</a></li>
+                <li class="menu">
+                    <a href="#services">Services</a>
+                
+                        <ul class="dropdown">
+                            <li><a href="">Service 1</a></li>
+                            <li><a href="">Service 1</a></li>
+                            <li><a href="">Service 1</a></li>
+                            <li><a href="">Service 1</a></li>
+
+                        </ul>
+                
+                
+                </li>
+                
+
+
+            </ul>
+        </div>
+
+        <div class="content">Content</div>
+        <div class="content">Content</div>
+        <div class="content">Content</div>
+        <div class="content c2" id="about">About</div>
+        <div class="content">Content</div>
+        <div class="content c4" id="services">Services</div>
+        <div class="content">Content</div>
+
+
+        <div class="footer">Footer</div>
+
+         <a href="#" class="topBtn">To Top</a> 
+
+    
+</body>
+</html>

@@ -1,0 +1,236 @@
+@media (max-width:500px) {
+
+    .navigation {
+        display: none;
+
+    }
+
+    .fa-bars {
+        display: inline-block;
+    }
+
+    .logo {
+        width: 150px;
+        height: 80px;
+        margin-left: 80px;
+    }
+
+    .box1 {
+        width: 450px;
+        right: 0px;
+    }
+
+    .line {
+        font-size: 2rem;
+        margin: 15px 0px;
+    }
+
+    .box2 {
+        grid-template-columns: 1fr;
+    }
+
+    .section3 {
+        grid-template-columns: 1fr;
+    }
+
+    .Portfolio {
+        padding: 50px;
+    }
+
+    .Portfolio-img {
+        width: 350px;
+        height: 350px;
+        margin: auto;
+    }
+
+    .cmp-people {
+        grid-template-columns: 2fr;
+    }
+
+    .cmp-people-img {
+        width: 450px;
+        height: 450px;
+
+    }
+
+    .section4 {
+        grid-template-rows: none;
+        padding: 0px;
+
+    }
+
+    .clients .forward-aero {
+        bottom: 12%;
+        right: 10px;
+    }
+
+    .quotation {
+        padding: 35% 0px;
+    }
+
+    .section5 {
+        background-position: right;
+        background-position-y: 200px;
+    }
+
+    .section6 ul {
+        text-align: center;
+    }
+
+    .hr-porfolio {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        height: auto;
+        padding: 0px 50px;
+    }
+
+    .section7 {
+        grid-template-columns: 1fr;
+        padding: 40px 40px;
+
+    }
+
+    .section7 .sec7-img img {
+        width: 450px;
+        height: 450px;
+
+    }
+
+    .section7 .sec7-content {
+        padding: 50px 30px;
+        width: 450px;
+        height: 600px;
+    }
+
+    .section8 {
+        grid-template-columns: 1fr;
+
+
+    }
+
+    .our-office {
+        width: 400px;
+        height: 150px;
+    }
+
+    .location {
+        width: 450px;
+        margin: 100px 30px;
+        padding: -10px 0px;
+
+    }
+
+    .multiple-offices {
+        grid-template-columns: none;
+        grid-template-rows: auto;
+        margin-top: 50px;
+    }
+
+    .offices {
+        width: 450px;
+        padding: 0px 30px;
+    }
+
+    .sec9-info {
+        grid-template-columns: 1fr;
+    }
+
+    .blog {
+        grid-template-columns: 1fr;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .blog-box .info {
+        top: 0;
+        left: 18px;
+    }
+
+    .section10 {
+        width: 470px;
+        height: 350px;
+
+        bottom: -300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+    }
+
+    .location {
+        width: 450px;
+        height: 450px;
+    }
+
+    .section10 .news-img {
+
+        width: 470px;
+        height: 350px;
+    }
+
+    .section10 .news-img img {
+        width: 470px;
+        height: 350px;
+    }
+
+    .sub-scribe {
+        width: 650px;
+        height: 500px;
+        position: absolute;
+        top: -300px;
+        left: 6%;
+
+
+        z-index: 5;
+    }
+
+    .sub-scribe {
+        width: 480px;
+        left: 0%;
+        padding-left: 40px;
+    }
+
+    .sub-scribe p {
+        width: auto;
+        margin: 10px 0px;
+    }
+
+    .sub-scribe input {
+        width: 236px;
+    }
+
+    .footer-bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        border-bottom: 3px solid rgba(128, 128, 128, 0.671);
+    }
+
+    .section9 {
+        padding: 0px 10px;
+    }
+
+    .nav-bottom li,
+    a {
+        font-size: .5rem;
+        padding: 20px 0px;
+    }
+
+    .nav-bottom a {
+        margin: 0px 130px;
+    }
+
+
+
+
+
+
+
+
+
+}
