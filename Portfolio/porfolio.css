@@ -1,0 +1,580 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.top-btn{
+    display: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+}
+.fa-hand-o-up{
+    color: white;
+}
+.nav{
+    display: block;
+    z-index: 50;
+
+}
+
+.nav-col{
+    display: block;
+    position: fixed;
+    top: 300px;
+    right: 30px;
+    z-index: 1;
+    list-style: none;
+
+}
+.nav-btn{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top:15px;
+    scale: 1;
+
+}
+.dot{
+    scale: 1.8;
+}
+.btnsize{
+    scale: 2;
+}
+.section-1 {
+    width: 100%;
+    height: auto;
+    background-image:url(/Portfolio/header-home.jpg);
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+
+
+}
+/* .blank{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.523);
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+.main{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.tag-line {
+    color: white;
+    font-size: 1.8rem;
+    font-family: 'Castoro Titling', cursive;
+    margin-top: 100px
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+
+.container {
+    width: fit-content;
+    height: 100px;
+    background:transparent;
+    ;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 60px 0px;
+}
+
+.container .box {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 31px;
+
+}
+
+.container .box .title {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.container .box .title .block {
+    width: 0%;
+    height: inherit;
+    background: #ffb510;
+    position: absolute;
+    animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    display: flex;
+}
+
+.container .box .title h1 {
+    font-family: "Poppins";
+    color: #fff;
+    font-size: 32px;
+    -webkit-animation: mainFadeIn 2s forwards;
+    -o-animation: mainFadeIn 2s forwards;
+    animation: mainFadeIn 2s forwards;
+    animation-delay: 1.6s;
+    opacity: 0;
+    display: flex;
+    align-items: baseline;
+    position: relative;
+}
+
+.container .box .title h1 span {
+    width: 0px;
+    height: 0px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #ffb510;
+    -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation-delay: 2s;
+    margin-left: 5px;
+    margin-top: -10px;
+    position: absolute;
+    bottom: 13px;
+    right: -12px;
+}
+
+.container .box .role {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-top: -10px;
+}
+
+.container .box .role .block {
+    width: 0%;
+    height: inherit;
+    background: #e91e63;
+    position: absolute;
+    animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation-delay: 2s;
+    display: flex;
+}
+
+.container .box .role p {
+    animation: secFadeIn 2s forwards;
+    animation-delay: 3.2s;
+    opacity: 0;
+    font-weight: 400;
+    font-family: "Lato";
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+@keyframes mainBlock {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes secBlock {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes mainFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        width: 0px;
+        height: 0px;
+        background: #e9d856;
+        border: 0px solid #ddd;
+        opacity: 0;
+    }
+
+    50% {
+        width: 10px;
+        height: 10px;
+        background: #e9d856;
+        opacity: 1;
+        bottom: 45px;
+    }
+
+    65% {
+        width: 7px;
+        height: 7px;
+        bottom: 0px;
+        width: 15px;
+    }
+
+    80% {
+        width: 10px;
+        height: 10px;
+        bottom: 20px;
+    }
+
+    100% {
+        width: 7px;
+        height: 7px;
+        background: #e9d856;
+        border: 0px solid #222;
+        bottom: 13px;
+    }
+}
+
+@keyframes secFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.text-col {
+    width: 45%;
+    height: auto;
+    background-image: linear-gradient(to right, #ff0000, #6200ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: rgb(218, 218, 217);
+
+    font-size: 25px;
+    text-align: center;
+    font-weight: lighter;
+    font-family: Ubuntu;
+
+}
+
+.draw-border {
+    box-shadow: inset 0 0 0 4px #58afd1;
+    color: #58afd1;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+    margin: 50px 0px;
+
+  }
+  .draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+  }
+  .draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+  }
+  .draw-border:hover {
+    color: #ffe593;
+  }
+  .draw-border:hover::before, .draw-border:hover::after {
+    border-color: #ffe593;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+  }
+  .draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+  }
+  .draw-border:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+  }
+  
+  .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem "Roboto Slab", sans-serif;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+    margin-bottom: 100px;
+    margin-top: 80px;
+  }
+  .btn:focus {
+    outline: 2px solid #55d7dc;
+  }
+  .section2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #000;
+    overflow: hidden;
+    padding-top: 100px;
+  }
+  .about{
+    background-color: #000;
+    padding: 50px;
+  }
+  .about h1{
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+  } 
+  .about h5{
+    color: #D43F52;
+    font-size: 1.3rem;
+    padding: 25px 0px;
+    padding-top: 10px;
+    font-family: 'Roboto Slab', serif;
+
+  }
+  .about p{
+    color: #999;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .skills{
+    background-color: black;
+    padding: 50px;
+  }
+ .html{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    padding: 0px;
+ }
+ 
+ .o{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    
+
+ }
+ .line{
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+ }
+ .line1,.line2,.line3,.line4,.line5,.line6 {
+    width: 80%;
+    height: 5px;
+    background-color: salmon;
+    border-radius: 5px;
+    position: absolute;
+    /* animation: progress 3s; */
+    /* animation: progress 5s timing-function 2s 1 toright fill-mode; */
+
+ }
+ 
+  
+ .line2{
+    width: 75%;
+ }
+ .line3{
+    width: 65%;
+ }
+ .line4{
+    width: 70%;
+ }
+ .line5{
+    width: 75%;
+ }
+ .line6{
+    width: 80%;
+ }
+ .projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+ }
+.project1 .project2 .project3{
+    width: 340px;
+    height: 260px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.project4 .project5 {
+    width: 555px;
+    height: 360px;
+}
+
+.project1 .project2 .project3,img{
+    width: 340px;
+    height: 260px;
+ }
+ .project4 .project5,img{
+    width: 555px;
+   height: 360px;
+   
+}
+ .section3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    padding-bottom: 80px;
+    background-color: #000;
+    padding-bottom: 0px;
+
+
+ }
+ .contactme{
+    background-color: #000;
+    padding-top: 90px;
+    padding-left: 200px;
+
+
+ }
+ .contactme h1{
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+
+ }
+
+ .cont-box{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 20px;
+
+ }
+
+ .cont-1{
+    width: 50px;
+    height: 50px;
+    background-color: #000;;
+    border-radius: 50%;
+    color: rgb(212, 63, 82);
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .mo{
+    margin-left: 10px;
+    color: #999;
+ }
+ .inqury{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+    padding-top: 80px;
+ }
+ .inqury input{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    outline: none;
+    background-color: #000;
+    border: 1px solid #999;
+    color: #ddd;
+ }
+ ::placeholder{
+    color: #999;
+    padding: 10px;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+ }
+ .inqury textarea{
+    width: 100%;
+    margin-top: 20px;
+    outline: none;
+    background-color: #000;
+    border: 1px solid #999;
+    color: #ddd;
+
+
+ }
+ .sendme{
+    width: 100%;
+    height: 50px;
+    background-color: #D43F52;
+    margin: 20px;
+    border: none;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+ }
+ .socialmedia{
+    background-color: #000;
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+padding: 20px;
+ }
+ .media{
+    color: white;
+    background-color: #000;
+    padding: 10px;
+ }
+ .design{
+    color: #ffffff;
+    background-color: #000;
+    text-align: center;
+    padding-bottom: 100px;
+ }

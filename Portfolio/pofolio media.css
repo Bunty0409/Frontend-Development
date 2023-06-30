@@ -1,0 +1,21 @@
+@media (max-width:1000px) and (min-width:100px) {
+    .section2{
+        grid-template-columns: 1fr;
+    }
+    .section3   {
+        grid-template-columns: 1fr;
+    }
+    .contactme{
+        justify-content: start;
+        padding-left: 60px;
+    }
+}
+    
+@keyframes progress{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 80%;
+    }
+}
