@@ -1,4 +1,5 @@
-*{margin: 0;padding: 0;box-sizing: border-box;}
+*{margin: 0;padding: 0;box-sizing: border-box;scroll-behavior: smooth;}
+
 h1,h2,h3,h4,h5,h6{
     font-family: Raleway;
 }
@@ -16,10 +17,11 @@ h1,h2,h3,h4,h5,h6{
             height: 800px;
             background-size: cover;
             background-repeat: no-repeat;
+            overflow: hidden;
         }
         header{
             display: grid;
-            grid-template-columns: 1fr 4fr;
+            grid-template-columns: 1fr 2fr;
         }
         .logo{
             width: 300px;
@@ -40,21 +42,23 @@ h1,h2,h3,h4,h5,h6{
         }
         
         .navigation{
-            height: 100px;
+            width: auto;
+            height: auto;
             display: grid;
             padding: 50px;
             margin-left: 50px;
+            text-align: start;
 
             
         }
-        li{
+        .navigation li{
             display: inline; 
             font-family: Raleway;
-            margin-right: 20px;
+            /* margin-right: 20px; */
             font-size: 1rem;
             font-weight: bold;
         }
-        ul{
+        .navigation ul{
             padding-right: 0px;
             padding: 10px;
         }
@@ -158,7 +162,7 @@ h1,h2,h3,h4,h5,h6{
         }
         .navigation button{
             border-radius: 20px;
-            padding: 10px 5px;
+            padding: 10px 10px;
             margin-left: 20px;
             border: none;
             background-color: #b73235;
@@ -246,16 +250,21 @@ h1,h2,h3,h4,h5,h6{
             font-size: 2rem;
             font-weight: lighter;
             color: #b73235;
-            padding-left: 20px;
-            margin-bottom: 20px;
+            margin-top: 50px;
+            /* padding-left: 20px; */
+            /* margin-bottom: 20px; */
+            text-align: center;
+
             
 
         }
         .x{
             display: grid;
             grid-template-columns: 1fr 3fr;
-            width: 400px;
-            height: 150px;
+            margin-top: 50px;
+            
+            /* width: 400px; */
+            /* height: 150px; */
         }
         .x i{
             font-size: 3rem;
@@ -286,7 +295,9 @@ h1,h2,h3,h4,h5,h6{
             font-size: 2rem;
         }
         
-
+            .section2{
+                overflow: hidden;
+            }
         
         .section3{
             width: 100%;
@@ -394,7 +405,7 @@ h1,h2,h3,h4,h5,h6{
             width: 240px;
             height: 252px;
             margin: auto;
-            transition: .5s;
+            transition: 1s;
         }
         .cmp-people-img:hover{
             transform: rotateY(180deg);
@@ -521,12 +532,16 @@ h1,h2,h3,h4,h5,h6{
             background: url(../Images/bgn-portfolio-2.png),url(../Images/bgn-portfolio-1.png);
             background-repeat: no-repeat;
             background-position: right,left;
+            overflow: hidden;
         }
+       
         .section6 ul li{
             position: relative;
             margin-left: 60px;
             font-weight: bold;
             font-size: 1.1rem;
+            /* display: flex;
+            justify-content: start; */
         }
         .section6 ul li::before{
             content: " ";
@@ -985,7 +1000,7 @@ h1,h2,h3,h4,h5,h6{
     .circle i{
         position: absolute;
         top: 0;
-        left: 10px;
+        left: 12px;
         display: grid;
         color: white;
         font-size: 2rem;
@@ -1001,15 +1016,21 @@ h1,h2,h3,h4,h5,h6{
     }
     .notes{
         padding: 40px 0px;
+        display: flex;
+        justify-content: center;
     }
     .nav-bottom{
         padding: 40px 0px;
+       
     }
-    .nav-bottom li,a{
+    .nav-bottom li{
+        display: inline;
         padding-left: 20px;
-        font-size: 1rem;
+        font-size: .9rem;
         font-weight: lighter;
         color: #181818;
         text-decoration: none;
     }
+    
+    
     
