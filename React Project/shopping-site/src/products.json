@@ -1,0 +1,79 @@
+
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "Product 1",
+        "price": 19.99,
+        "image": "https://cdn.shopify.com/s/files/1/2303/2711/files/2_e822dae0-14df-4cb8-b145-ea4dc0966b34.jpg?v=1617059123"
+      },
+      {
+        "id": 2,
+        "title": "Product 2",
+        "price": 29.99,
+        "image": "https://expertphotography.b-cdn.net/wp-content/uploads/2020/11/product-photography-tips-14-1.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Product 3",
+        "price": 40.50,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkFieEijUrYFyY1WDWGIINwfQIQLATpzTLlw&usqp=CAU"
+      },
+      {
+        "id": 4,
+        "title": "Product 4",
+        "price": 48.50,
+        "image": "https://images.ctfassets.net/yp0eyja3qz0n/5Glj5hh4bSagent6cTC2An/0f319099844178119b7038313744d9ae/4084500311015_Luminous-Serum_0308.jpg?fm=png"
+      },
+      {
+        "id": 5,
+        "title": "Product 5",
+        "price": 95.62,
+        "image": "https://i.insider.com/61c371ce3bbcdd0012a06398?width=700"
+      },
+      {
+        "id": 6,
+        "title": "Product 6",
+        "price": 45.20,
+        "image": "https://i.insider.com/5f835d4ebab422001979aaeb"
+      },
+      {
+        "id": 7,
+        "title": "Product 7",
+        "price": 65.20,
+        "image": "https://www.simicart.com/blog/wp-content/uploads/trending-products-to-sell.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Product 8",
+        "price": 10.52,
+        "image": "https://serverguy.com/wp-content/uploads/2019/10/portable-blender-1.webp"
+      },
+      {
+        "id": 9,
+        "title": "Product 9",
+        "price": 62.32,
+        "image": "https://don16obqbay2c.cloudfront.net/wp-content/uploads/How-To-Find-Trending-Products-To-Sell-Online-in-2021@2x-8-1-1622616913.png"
+      },
+      {
+        "id": 10,
+        "title": "Product 10",
+        "price": 71.50,
+        "image": "https://www.cloudways.com/blog/wp-content/uploads/Wireless-Phone-Chargers.jpg"
+      },
+      {
+        "id": 11,
+        "title": "Product 11",
+        "price": 80.20,
+        "image": "https://www.cloudways.com/blog/wp-content/uploads/Smart-Watch.jpg"
+      },
+      {
+        "id": 12,
+        "title": "Product 12",
+        "price": 70.20,
+        "image": "https://www.volusion.com/blog/content/images/2020/06/Products.jpg"
+      }
+      
+    ]
+  }
+  
