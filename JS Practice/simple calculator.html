@@ -51,7 +51,7 @@
 
     .buttons {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-gap: 10px;
       margin-top: 20px;
     }
@@ -123,20 +123,20 @@
   <script>
     const buttons = document.querySelectorAll("button");
     const input = document.getElementById("result");
+    console.log(buttons);
 
     buttons.forEach((e) => {
       e.addEventListener("click", (i) => {
 
         if (i.target.innerHTML == "=") {
-
           input.value = eval(input.value)
         }
         else if (i.target.innerHTML == "C") {
           input.value = ""
         }
         else if (i.target.innerHTML == "DEL") {
-          del = input.value
-          input.value = del.substring(0, del.length - 1)
+          input.value = input.value.slice(0, -1)
+
 
         }
         else {

@@ -19,7 +19,7 @@ function Navbar() {
         <div className="collapse navbar-collapse d-lg-flex justify-content-between " id="collapsibleNavbar">
           <ul className="navbar-nav d-flex align-items-center">
             <li className="nav-item">
-              <Link to="/product.jsx" className="nav-link">Products <i className="fa fa-angle-down"></i></Link>
+              <Link to="/product.jsx" className="nav-link">Product<i className="fa fa-angle-down"></i></Link>
             </li>
             <li className="nav-item">
               <Link to="/teamPage.jsx" className="nav-link">For teams <i className="fa fa-angle-down"></i></Link>

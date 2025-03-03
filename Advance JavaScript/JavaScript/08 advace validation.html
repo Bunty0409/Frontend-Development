@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" align="center">
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="name" name="name" onblur="Validate(this,'nameError')"
+                    onkeydown="NameVal(this,'nameErr')"> <span id="nameError"></span>
+                <span id="nameErr"></span>
+            </td>
+
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>
+                <input type="text" id="email" name="name" onblur="Validate(this,'emailError')">
+                <span id="emailError"></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" id="pwd" name="name" onblur="Validate(this,'pwdError')"> <span
+                    id="pwdError"></span></td>
+
+
+        </tr>
+        <tr>
+            <td>Mobile:</td>
+            <td><input type="text" id="mobile" name="name" onblur="Validate(this,'mobileError')"> <span
+                    id="mobileError"></span></td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="center"><input type="submit" name="submit" value="submit"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<script>
+    function Validate(e, spnid) {
+        if (e.value == "") {
+            document.getElementById(spnid).style.color = "red"
+            document.getElementById(spnid).innerHTML = "please enter data"
+        }
+        else {
+            document.getElementById(spnid).innerHTML = ""
+        }
+    }
+    function NameVal(e, spnid) {
+        let name = /^[a-z]+$/
+        if (name.test(e.value)) {
+            document.getElementById(spnid).innerHTML = ""
+        }
+        else {
+            document.getElementById(spnid).style.color = "red"
+            document.getElementById(spnid).innerHTML = "please enter valid carcater"
+        }
+       
+
+    }
+</script>

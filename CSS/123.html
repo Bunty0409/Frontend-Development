@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .x{
+            width: 340px;
+            height: 340px;
+            background-color: transparent;
+            /* border: 20px solid transparent; */
+            margin: 200px auto;
+            overflow: hidden;
+            position: relative;
+            /* transform: rotate(180deg); */
+
+        }
+        .y{
+            width: 600px;
+            height: 600px;
+            background: linear-gradient(red,yellow);
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            z-index: -1;
+            /* transform: rotate(360deg); */
+            animation: effect 1s infinite linear;
+        }
+        .o{
+            width: 300px;
+            height: 300px;
+            background-color: black;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 3;
+        }
+        @keyframes effect{
+            from{transform: rotate(0deg)}
+            to{transform: rotate(360deg);}
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="x">
+        <div class="y"></div>
+        <div class="o"></div>
+    </div>
+    
+</body>
+</html>

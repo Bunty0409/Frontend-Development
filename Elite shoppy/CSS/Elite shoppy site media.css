@@ -1,0 +1,14 @@
+@media(max-width:500px){
+    .header-box1,.header-box2{
+        flex-wrap: wrap;
+    }
+    .t{
+        width: 50%;
+    }
+    
+    .searchbar,.cmp-logo,.social-media{
+        /* justify-content: space-evenly; */
+        width: 100%;
+        padding: 10px;
+    }
+}

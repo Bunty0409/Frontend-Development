@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Namevalid(e,spnid){
+            let name = /^[a-z]+$/
+            if(name.test(e.value))
+            {
+                document.getElementById(spnid).innerHTML=""
+            }
+            else{
+                document.getElementById(spnid).innerHTML.style.color="red"
+                document.getElementById(spnid).innerHTML="please enter valid name"
+
+            }
+
+        }
+    </script>
+</body>
+</html>

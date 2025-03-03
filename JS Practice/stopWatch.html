@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.stopwatch{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px 24px;
+    border-radius: 10px;
+}
+
+.timerDisplay{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.buttons{
+    margin-top: 20px;
+}
+
+.btn{
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    background-color: var(--clr);
+    padding: 12px 24px;
+    margin-inline: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="stopwatch">
+        <div class="timerDisplay">00 : 00 : 00</div>
+    </div>
+
+    <div class="buttons">
+        <button id="stopBtn" class="btn" style="--clr:red;">Stop</button>
+
+        <button id="startBtn" onclick="start()" class="btn" style="--clr:green">Start</button>
+
+        <button id="resetBtn" class="btn" style="--clr:blue">Reset</button>
+    </div>
+<script>
+    timerdisplay = document.querySelector(".timerDisplay");
+    stopBtn= document.getElementById("stopBtn");
+    startBtn= document.getElementById("startBtn");
+    resetBtn= document.getElementById("resetBtn");
+
+    // startBtn.addeventlistener("click",(start))
+    function start(){
+    // msec= "05";
+        
+        timerdisplay.innerHTML = "";
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+// timerdisplay.innerHTML=`${12}:${23}:${56}`;
+</script>
+
+    
+</body>
+</html>

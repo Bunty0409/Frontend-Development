@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="/music player.css">
+    <link rel="stylesheet" href="/music player.js">
+</head>
+<body>
+    <div class="main">
+        <div class="serch-bar"><input type="search" placeholder="search songs"> <div class="button"></div></div>
+        <div class="music-icon"></div>
+        <audio controls src="/Apna-Bana-Le(PagalWorld).mp3" id="myAudio"></audio>
+        <div class="leftside-button"><i class="fa-solid fa-pause"></i>
+        <hr><i class="fa-solid fa-stop"></i></div>
+        <div class="rightside-button"><i class="fa-solid fa-plus"></i><hr><i class="fa-solid fa-minus"></i></div>
+        <div class="center-button" onclick="playAudio()"><i class="fa-sharp fa-solid fa-play"></i></div>
+        <div class="bottomside-button"><i class="fa-sharp fa-solid fa-forward"></i><i class="fa-solid fa-backward"></i><hr class="hr-bottom"></div>
+    </div>
+    
+</body>
+</html>

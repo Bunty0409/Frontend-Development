@@ -79,7 +79,7 @@ function showImages(filterText) {
     imgs = document.createElement("img"); // create new element of img
     imgs.src = products[randomIndexNo].Img; // insert src into img tag
     imgs.style.width = "200px"; // img width
-    imgs.style.height = "200px"; // img height
+    imgs.style.height = "195px"; // img height
 
     iteam_name = document.createElement("h3"); //create new element of h3
     iteam_name.innerText = products[randomIndexNo].Name; //insert name of product

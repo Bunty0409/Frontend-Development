@@ -1,8 +1,18 @@
 @media (max-width:1000px) and (min-width:100px) {
+    .nav-col{
+        display: none;
+    }
     .section2{
         grid-template-columns: 1fr;
     }
-    .section3   {
+    .projects {
+        gap: 8px;
+      }
+    .prj-img1,.prj-img2,.prj-img3,.prj-img4{
+        width: 360px;
+        height: 180px;
+    }
+    .section4   {
         grid-template-columns: 1fr;
     }
     .contactme{

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+
+    Name: <input type="text" id="nm" onblur="validateForm(nm,mb)"><br><br>
+
+    Mobile: <input type="text" id="mb" onblur="validateForm(nm,mb)"><br><br>
+    
+    <input type="submit" onclick="validate()">
+
+    <script>
+       
+       const nameRegex = /^[a-zA-Z]+$/;
+const mobileRegex = /^[0-9+ -]+$/;
+
+function validateForm(nameField, mobileField) {
+  if (nameField.value == "") {
+    nameField.style.border = "2px solid red";
+    alert("Name is required!");
+    return false;
+  } else if (!nameRegex.test(nameField.value)) {
+    alert("Only alphabets are allowed in the name field!");
+    nameField.style.border = "2px solid red";
+    return false;
+  } else if (name.nameField=!"") {
+    nameField.style.border = "2px solid green";
+    return false;
+  }
+
+  else if (mobileField.value == "") {
+    mobileField.style.border = "2px solid red";
+    alert("Mobile is required!");
+    return false;
+  } else if (!mobileRegex.test(mobileField.value)) {
+    alert("Only numbers, +, - and space are allowed in the mobile field!");
+    mobileField.style.border = "2px solid red";
+    return false;
+  } else {
+    mobileField.style.border = "2px solid green";
+  }
+
+  return true;
+}
+
+    //    const  name1 =document.getElementById("nm")
+    //    const mobile1 =document.getElementById("mb")
+    //   const nm_exp = /^[a-zA-Z]+$/;
+    //   const mo_exp =/^[0-9]+$/;
+    //     function abc(t,t1){
+    //         if(t.value ==""){
+    //             t.style.border=" 2px solid red"
+    //             alert("Name is required..!");
+    //         return false;
+                
+    //         }
+    //         else if(!nm_exp.test(t.value))   
+    //             {
+    //                 alert("only alfabets..!")
+    //                 t.style.border="2px solid red"
+    //                 return false;
+    //             }
+    //             else if (t.value!=""){
+    //                 t.style.border=" 2px solid green"
+    //                 return false;
+                
+    //             }
+                
+    //            else if(t1.value ==""){
+    //             t1.style.border=" 2px solid red"
+    //             alert("mobile is required..!");
+    //         return false;
+                
+    //         }
+    //          else if(!mo_exp.test(t1.value))   
+    //             {
+    //                 alert("only numbers..!")
+    //                 t1.style.border="2px solid red"
+    //                 return false;
+    //             }             
+
+    //             else{   
+    //             t1.style.border=" 2px solid green"
+                
+    //             }                   
+
+    //         }
+        // function xyz(t){
+        //     if(t.value ==""){
+        //         t.style.border=" 2px solid red"
+        //         alert("mobile required..!");
+        //     return false;
+                
+        //     }
+        //     else{
+        //         t.style.border=" 2px solid green"
+        //         if(!mo_exp.test(t.value))   
+        //         {
+        //             alert("only numbers..!")
+        //             t.style.border="2px solid red"
+        //             return false;
+        //         }
+        //         }
+            
+            
+        // }
+    //    function validate()
+    //    {
+    //     if(nm.value ==  "")
+    //     {
+    //         alert("Name is required..!");
+    //         return false;
+    //     }
+
+    //     if(!nm_exp.test(nm.value))
+    //     {
+    //         alert("only alphabets..!");
+    //         return false;
+    //     }
+
+    //     if(mobile.value ==  "")
+    //     {
+    //         alert("Mobile is required..!");
+    //         return false;
+           
+    //     }
+    //     if(!mo_exp.test(mobile.value)){
+    //         alert("only numbers")
+    //     }
+       
+    //    }
+    </script>
+    
+</body>
+</html>

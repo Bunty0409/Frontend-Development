@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //promise =promises are used to handle asynchronous oprations in javascript.They are easy manage when dealing with multiple asynchronous oprations 
+
+    const mypro = new Promise((resolve,reject)=>{
+        const a= 1 
+        const b= 1
+        if(a==b){
+            resolve("success")
+        }
+        else{
+            reject("no match found")
+        }
+    }).then((res)=>{
+        console.log(res);
+    }).catch((error)=>{
+        console.log(error);
+    })
+</script>
