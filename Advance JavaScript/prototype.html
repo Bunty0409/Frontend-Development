@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+ <script>
+    // prototype  : the prototype object is special type of enumerable object to which addition properties can be attached to its which will be sherad across all the instances of its constiuctor function
+
+    function customer(name,age)
+    {
+        this.name = name
+        this.age =age 
+    }
+    const data = new customer("agelaa",24)
+    console.log(data);
+    console.log(data.name,data.age);
+
+
+
+    customer.prototype.profession = "doctor"
+    customer.prototype.fname = "christan"
+    console.log(data.profession);
+    console.log(data.fname);
+ </script>

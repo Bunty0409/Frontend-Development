@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+           
+        }
+        .main-box{
+            width: 1000px;
+            height: 100vh;
+            margin: 0px 177.5px;
+            position: relative;
+          
+        }
+        .mens{
+            width: 250px;
+            height: 50px;
+            /* background-color: black; */
+            position: absolute;
+            top: 0;
+            /* left: 50px; */
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+        }
+        .small-box{
+            width: 15px;
+            height: 15px;
+            transform: rotate(45deg);
+            position: absolute;
+            left: 125px;
+            bottom:-8px;
+        }
+        .womens{
+            width: 250px;
+            height: 50px;
+            position: absolute;
+            left: 265px;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+
+        }
+        .bags{
+            width: 250px;
+            height: 50px;
+            position: absolute;
+            left: 530px;
+            /* border: 1px solid; */
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+
+        }
+        .footware{
+            width: 250px;
+            height: 50px;
+            position: absolute;
+            left: 795px;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+        }
+        .container{
+            width: 1000px;
+            display: none;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 15px;
+            margin-top: 25px;
+            position: absolute;
+            top: 50px;
+            left: 0px;
+        }
+        .main{
+            width: 250px;
+            height: 350px;
+            position: relative;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.589);
+            overflow: hidden;
+        }
+        .x 
+        {
+            height: 250px;
+            width: 250px;
+            
+        }
+
+        .front
+        {
+            height: 250px;
+            width: 200px;
+            backface-visibility: hidden;
+            position:absolute;
+            top:25px;
+            left:25px;
+            transform: rotateY(180deg);
+            transition: 1s;
+        }
+
+
+        .back 
+        {
+            height: 250x;
+            width: 200px;
+            backface-visibility: hidden;
+            position:absolute;
+            top:25px;
+            left:25px;
+            transform: rotateY(0deg);
+            transition: 1s;
+        }
+        
+        .x:hover .front 
+        {
+            transform: rotateY(0deg);
+        }
+        .x:hover .back 
+        {
+            transform: rotateY(180deg);
+        }
+        .x:hover{
+            background-color: rgb(241, 240, 240);
+        }
+        .effect{
+            width: 100%;
+            height: 40px;
+            background-color: rgb(2, 2, 2);
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            opacity: 0;
+            font-weight: 500;
+            position: absolute;
+            top: 0;
+            transition: 0.5s;
+
+}
+.x:hover .effect{
+    opacity: 1;
+    transform: translateY(200px);
+}
+.effect:hover{
+    background-color: aqua;
+}
+ .iteam-name{
+    width: 100%;
+    height: 35px;
+    color: brown;
+    line-height: 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    position: absolute;
+    top: 230px;
+}
+.price{ 
+    width: 100%;
+    height: 35px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    line-height: 40px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    background-color: rgb(255, 255, 255); 
+    word-spacing: 10px;
+    position: absolute;
+    top: 268px;
+}
+del{
+    color: gray;
+}
+
+.in-box{
+    width: 208px;
+    height: 52px;
+    margin-right: 15px;
+    position: absolute;
+    left: -2%;
+    background-color: transparent;
+    border: 4px  solid aqua;
+    transition: 0.5s;
+    box-sizing: border-box;
+    scale: 0.9 0.5;
+    position: absolute;
+    top: -11px;
+}
+button{
+    position: relative;
+    width: 80%;
+    height: 30px;
+    border: none;
+    background-color: aqua;
+    margin: 10px auto;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 296px;
+    left: 0px;
+
+    
+
+}
+button:hover .in-box{
+    scale: 1.04 0.9;
+}
+
+    .mens:hover .container{
+        display: grid;
+    }
+    .mens:hover{
+        background-color: #fc636b;
+    }
+    .mens:hover .small-box{
+        background-color: #fc636b;
+    }
+    .womens:hover .container{
+        display: grid;
+        position: absolute;
+        left: -265px;
+    }
+    .womens:hover{
+        background-color: #fc636b;
+    }
+    .womens:hover .small-box{
+        background-color: #fc636b;
+    }
+    .bags:hover .container{
+        display: grid;
+        position: absolute;
+        left:-530px;
+    } 
+    .bags:hover{
+        background-color: #fc636b;
+    }
+    .bags:hover .small-box{
+        background-color: #fc636b;
+    }
+    .footware:hover .container{
+        display: grid;
+        position: absolute;
+        left: -795px;
+    }
+    .footware:hover{
+        background-color: #fc636b;
+    }
+    .footware:hover .small-box{
+        background-color: #fc636b;
+    }
+    </style>
+</head>
+<body>
+<div class="main-box">
+    <div class="mens">MENS
+        <div class="small-box"></div>
+    <div class="container">
+        
+ <div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Formal Blue Shirt</div>
+        <div class="price">$45.99 <del>$69.20</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div>
+<div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Gabi Full Sleeve Sweatshirt</div>
+        <div class="price">$90.80 <del>$99.74</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Dark Blue Track Pants</div>
+        <div class="price">$80.56 <del>$89.45</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Round Neck Black T-Shirt    </div>
+        <div class="price">$190.50 <del>$199</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m5.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m5.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Men's Black Jeans    </div>
+        <div class="price">$65.45 <del>$70.50</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m6.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m6.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Analog Watch</div>
+        <div class="price">$90.60 <del>$100.70</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Reversible Belt</div>
+        <div class="price">$71.80 <del>$80.60</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m8.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m8.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Party Men's Blazer</div>
+        <div class="price">$185.90 <del>$200.60</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <div class="womens">WOMENS
+        <div class="small-box"></div>
+    <div class="container">
+        
+ <div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w1.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w1.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">A-line Black Skirt    </div>
+        <div class="price">$105.80 <del>$115.70</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div>
+<div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w2.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w2.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Sleeveless Solid Blue Top</div>
+        <div class="price">$120.80 <del>$145.20</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w3.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w3.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Skinny Jeans</div>
+        <div class="price">$130.75 <del>$139.62</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w4.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w4.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Black Basic Shorts</div>
+        <div class="price">$75.90 <del>$90.10</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w5.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w5.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Pink Track Pants</div>
+        <div class="price">$85.65 <del>$100.50</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w6.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w6.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Analog Watch</div>
+        <div class="price">$125.70 <del>$140.50</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w7.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w7.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Ankle Length Socks</div>
+        <div class="price">$79.65 <del>$0</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w8.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w8.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Reebok Women's Tights</div>
+        <div class="price">$150.60 <del>$155.89</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="bags">BAGS
+    <div class="small-box"></div>
+<div class="container">
+    
+<div class="main">
+<div class="x">
+   
+    <div class="front">
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b1.jpg" alt="" height="100%" width="100%">
+    </div>
+    <div class="back">
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b1.jpg" alt="" height="100%" width="100%">
+    </div>
+    <div class="effect">QUICK VIEW</div>
+</div>
+<div class="iteam-name">Laptop Messenger Bag</div>
+    <div class="price">$150.80 <del>$154.62</del></div>
+    <button >ADD TO CART <div class="in-box"></div></button>
+</div>
+<div class="main">
+<div class="x">
+   
+    <div class="front">
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b2.jpg" alt="" height="100%" width="100%">
+    </div>
+    <div class="back">
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b2.jpg" alt="" height="100%" width="100%">
+    </div>
+    <div class="effect">QUICK VIEW</div>
+</div>
+<div class="iteam-name">Puma Backpack</div>
+    <div class="price">$140.60 <del>$148.65</del></div>
+    <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+<div class="x">
+   
+    <div class="front">
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b3.jpg" alt="" height="100%" width="100%">
+    </div>
+    <div class="back">
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b3.jpg" alt="" height="100%" width="100%">
+    </div>
+    <div class="effect">QUICK VIEW</div>
+</div>
+<div class="iteam-name">Laptop Backpack</div>
+    <div class="price">$120.50 <del>$158.80</del></div>
+    <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+<div class="x">
+   
+    <div class="front">
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b4.jpg" alt="" height="100%" width="100%">
+    </div>
+    <div class="back">
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b4.jpg" alt="" height="100%" width="100%">
+    </div>
+    <div class="effect">QUICK VIEW</div>
+</div>
+<div class="iteam-name">Travel Duffel Bag</div>
+    <div class="price">$80.90 <del>$92.65</del></div>
+    <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+<div class="x">
+   
+    <div class="front">
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b5.jpg" alt="" height="100%" width="100%">
+    </div>
+    <div class="back">
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b5.jpg" alt="" height="100%" width="100%">
+    </div>
+    <div class="effect">QUICK VIEW</div>
+</div>
+<div class="iteam-name">Hand-held Bag</div>
+    <div class="price">$90.40 <del>$99.40</del></div>
+    <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+<div class="x">
+   
+    <div class="front">
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b6.jpg" alt="" height="100%" width="100%">
+    </div>
+    <div class="back">
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b6.jpg" alt="" height="100%" width="100%">
+    </div>
+    <div class="effect">QUICK VIEW</div>
+</div>
+<div class="iteam-name">Butterflies Bag</div>
+    <div class="price">$80.50 <del>$85.98</del></div>
+    <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+<div class="x">
+   
+    <div class="front">
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b7.jpg" alt="" height="100%" width="100%">
+    </div>
+    <div class="back">
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b7.jpg" alt="" height="100%" width="100%">
+    </div>
+    <div class="effect">QUICK VIEW</div>
+</div>
+<div class="iteam-name">Costa Swiss Bag</div>
+    <div class="price">$150.60 <del>$156.87</del></div>
+    <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+<div class="x">
+   
+    <div class="front">
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b8.jpg" alt="" height="100%" width="100%">
+    </div>
+    <div class="back">
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b8.jpg" alt="" height="100%" width="100%">
+    </div>
+    <div class="effect">QUICK VIEW</div>
+</div>
+<div class="iteam-name">Noble Designs Bag</div>
+    <div class="price">$130.50 <del>$135.80</del></div>
+    <button >ADD TO CART <div class="in-box"></div></button>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+    <div class="footware">FOOTWARE
+        <div class="small-box"></div>
+    <div class="container">
+        
+ <div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s1.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s1.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Running Shoes</div>
+        <div class="price">$80.50 <del>$68.40</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div>
+<div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s2.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s2.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Shoetopia Lace Up</div>
+        <div class="price">$60.50 <del>$69.54</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s3.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s3.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Steemo Casuals(Black)</div>
+        <div class="price">$140.80 <del>$158.92</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s4.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s4.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Benetton Flip Flops</div>
+        <div class="price">$150.80 <del>$154.70</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s5.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s5.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Moonwalk Bellies</div>
+        <div class="price">$110.50 <del>$129.65</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s6.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s6.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Aero Canvas Loafers</div>
+        <div class="price">$120.40 <del>$127.65</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s7.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s7.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Sparx Sporty Canvas Shoes</div>
+        <div class="price">$148.95 <del>$195.50</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div><div class="main">
+    <div class="x">
+       
+        <div class="front">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s8.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="back">
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s8.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="effect">QUICK VIEW</div>
+    </div>
+    <div class="iteam-name">Women BLACK Heels</div>
+        <div class="price">$175.60 <del>$180.80</del></div>
+        <button >ADD TO CART <div class="in-box"></div></button>
+</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

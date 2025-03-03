@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+        }
+        .eye-bros{
+            width: 150px;
+            height: 10px;
+            background-color: white;
+            transform: rotate(-30deg) translate(-48px, -38px);
+        }
+        .eye{
+            width: 100px;
+            height: 300px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            border: 3px solid black;
+        }
+        .eye-ball{
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 50%;
+            /* margin: 150px auto; */
+            /* position: absolute; */
+            top: 0;
+            left: 0;
+            /* transform: translateX(20px); */
+            animation: eye-movement 1s linear infinite;
+            /* transform: translateY(120px); */
+        }
+        .box2 .eye-bros{
+            /* rotate: 180deg; */
+            transform: rotate(30deg) translate(5px, -12px);
+        }
+        .sutter{
+            width: 100px;
+            height: 300px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(-100%);
+            animation: sutter 2s ease-out;
+        }
+        @keyframes eye-movement{
+
+            0%{transform: translateX(-23px);}
+            50%{transform: translateX(23px);}
+            100%{transform: translateX(-23px);}
+        }
+        @keyframes sutter{
+            0%{transform: translateY(-0%);}
+            100%{transform: translateY(-100%);}
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="box1">
+        <div class="eye-bros"></div>
+        <div class="eye">
+            <div class="sutter"></div>
+            <div class="eye-ball"></div>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="eye-bros"></div>
+        <div class="eye">
+            <div class="sutter"></div>
+            <div class="eye-ball"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

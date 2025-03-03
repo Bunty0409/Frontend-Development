@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return SubmitData()" method="post">
+        <table border="1" align="center">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" id="email" name="name"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" id="pwd" name="name"></td>
+            </tr>
+            <tr>
+                <td>Mobile:</td>
+                <td><input type="text" id="mobile" name="name"></td>
+            </tr>
+
+            <tr><td colspan="2" align="center"><input type="submit" name="submit" value="submit" ></td></tr>
+        </table>
+    </form>
+    
+</body>
+<script>
+    function SubmitData()
+    {
+        let name =document.getElementById("name");
+        if(name.value == ""){
+            alert ("plese enter name!")
+            document.getElementById("name").focus();
+            return false
+        }
+        let email =document.getElementById("email");
+        if(email.value == ""){
+            alert ("plese enter email!")
+            document.getElementById("email").focus();
+            return false
+        }
+        let pwd =document.getElementById("pwd");
+        if(pwd.value == ""){
+            alert ("plese enter passsword!")
+            document.getElementById("pwd").focus();
+            return false
+        }
+        let moile =document.getElementById("mobile");
+        if(mobile.value == ""){
+            alert ("plese enter mobile!")
+            document.getElementById("mobile").focus();
+            return false
+        }
+    }
+</script>
+</html>

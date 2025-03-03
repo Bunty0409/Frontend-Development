@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="one">
+    <input type="text" id="two">
+    <button onclick="test()" id="demo">click</button>
+    <h1 id="h1"></h1>
+</body>
+<script>
+    // document.getElementById
+    // document.getElementsByClassName
+    // document.getElementsByName
+    // document.getElementsByTagName
+    // document.getElementsByTagNameNS
+    // document.querySelector
+    // document.querySelectorAll
+    function test(){
+        let first = document.getElementById("one").value
+        let second = document.getElementById("two").value
+        let sum = parseInt(first)+parseInt(second)
+        document.getElementById("h1").innerHTML= sum
+    }
+</script>
+</html>

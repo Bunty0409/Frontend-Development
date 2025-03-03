@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite task-4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        
+        .raw1{
+            /* display: flex; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            width: 100%;
+            padding: 60px 80px;
+            /* height: 400px; */
+            background-color: black;
+            box-sizing: border-box;
+        }
+        .profile{
+            /* width: 100%; */
+            /* height: 300px; */
+            padding: 10px;
+            background-color: black;
+        }
+        .c-name{
+            width: 100%;
+            /* height: 50px; */
+        }
+        .c-info{
+            width: 100%;
+
+        }
+        .social-acc{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            width:60%;
+            height: 50px;
+            padding-left: 6px;
+        }
+        
+        
+        .flickr-post{
+            width: 69%;
+            /* height: 300px; */
+            /* background-color: green; */
+            padding: 20px;
+            padding-top: 0px;
+            box-sizing: border-box;
+        }
+        .raw2{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 50px;
+            background-color: black;
+            /* border: 1px solid yellow; */
+            padding: 0px 50px;
+            box-sizing: border-box;
+        }
+        .raw3{
+            width: 100%;
+            height: 50px;
+            background-color: black;
+        }
+        .main{
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            /* border: 1px solid; */
+            position: relative;
+            /* overflow: hidden; */
+
+        }
+        .box1{
+            width: 30px;
+            height: 30px;
+            background-color: blue;
+            transition: .5s;
+            /* border: 1px solid; */
+            transform: rotateX(0deg)translateZ(20px);
+            position: absolute;
+            left: 0px;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            /* font-weight: bold; */
+            /* font-size: 1.8rem; */
+            /* border-top: 3px solid; */
+            /* box-sizing: border-box; */
+            
+
+        }
+        .main:hover .box1{
+            transform: rotateX(-90deg) ;
+            
+        }
+        .box2{
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            transition: .5s;
+            /* border: 1px solid; */
+            position: absolute;
+            transform: rotateX(90deg)  translateZ(20px);
+            position: absolute;
+            text-align: center;
+            line-height: 30px;
+            /* font-weight: bold; */
+            /* font-size: 1.8rem; */
+            /* border-bottom: 3px solid; */
+            /* box-sizing: border-box; */
+
+        }
+        /* .main:hover .box2{
+            transform: rotateX(90deg) translateY(-25px);
+            
+        } */
+        .main:hover .box2{
+            transform: rotateX(0deg);
+            /* background-color: aquamarine; */
+        }
+        h2::first-letter{
+            padding: 2px 7px;
+            color: white;
+            background-color: aqua;
+        }
+        h2{
+            margin: 0px;
+            color: white;
+            font-size: 30px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            line-height: 1.1;
+            /* letter-spacing: 2px; */
+        }
+        p{
+            line-height: 2em;
+            color:  #737070;
+            letter-spacing: 1px;
+        }
+        ul{
+            margin-left: -38px;
+        }
+        li{
+            list-style: none;
+            color: #737070;
+            padding: 4px 0px ;
+        }
+        h4{
+            color: white;
+            color: #fff;
+            font-size: 1.4em;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin: 0px;
+            /* font-weight: 1000; */
+            margin-bottom: 10px;
+            margin-bottom: 25px;
+        }
+        h4 span{
+            font-weight: 300;
+            font-size: 1rem;
+        }
+        hr{
+            width: 70%;
+            /* border: px solid; */
+            background-color: black;
+            margin: -1px auto;
+            padding: 0px 100px;
+            
+        }
+        h6{
+            color: white;
+            font-size: 1rem;
+            margin: 0px;
+        }
+        .store-info p {
+            font-size: 1rem;
+            margin: 0px;
+
+        }
+        .photos img{
+            width: 53px;
+            height: 62px;
+        }
+        .x{
+            width: 50px;
+            height: 62px;
+            margin: 0;
+        }
+        .photos{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 8px;
+            row-gap: 5px;
+            /* box-sizing: border-box; */
+            /* gap: 5px; */
+            /* column-gap: -3px; */
+
+        }
+        .y{
+            display: flex;
+            background-color:  #080808;
+            padding: 20px 0px;
+            box-sizing: border-box;
+            margin: 2px 0px;
+        }
+        .icon{
+            width: 50px;
+            /* height: 50px; */
+            /* background-color: yellow; */
+            color: white;
+            font-size: 1rem;
+            padding-left: 10px;
+            box-sizing: border-box;
+        }
+         .fa .fa-phone{
+            font-size: 1rem;
+            color: white;
+         }
+         input[type=email]{
+            outline: none;
+        width: 500px;
+        padding: 10px 14px;
+        color: #848484;
+        font-size: 14px;
+        border: 1px solid #3a3939;
+        /* width: 74%; */
+        letter-spacing: 3px;
+        background: #1f1f1f;
+         }
+         input[type=submit]{
+                border: none;
+        padding: 10px 20px 11px;
+        font-size: 15px;
+        outline: none;
+        text-transform: uppercase;
+        margin: 0 0 0 -4px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        background: #2fdab8;
+        color: #fff;
+}
+         h1{
+            margin: 0px;
+         }
+         .o{
+            width: 50px;
+            height: 50px;
+            background-color: yellowgreen;
+         }
+           
+        
+    </style>
+</head>
+<body>
+<div class="contanair">
+    <div class="raw1">
+    <div class="profile">
+        <div class="c-name"><h2>Elite Shoppy</h2></div>
+        <div class="c-info"><p>Lorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p></div>
+        <div class="social-acc">
+            <div class="facebook"> <div class="main">
+                <div class="box1" style="background-color:  #3b5998;"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+            
+                    <div class="box2"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                </div>
+            </div>
+            <div class="twiter">
+                <div class="main">
+                    <div class="box1" style="background-color: #00acee;"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                
+                        <div class="box2"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                    </div>
+            </div>
+            <div class="insta">
+                <div class="main">
+                    <div class="box1" style="background-color: #f77737;"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                
+                        <div class="box2"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    </div>
+            </div>
+            <div class="linkedin"><div class="main">
+                <div class="box1" style="background-color: #bd081c;" ><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+            
+                    <div class="box2"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                </div></div>
+        </div>
+    </div>
+    <div class="our-info">
+        <div><h4>Our <span>information</span></h4></div>
+        <div><ul>
+        <li>Home</li>
+        <li>Men's wear</li>
+        <li>Woen's wear</li>
+        <li>About</li>
+        <li>Short Codes</li>
+        <li>Contact</li></ul></div>
+    </div>
+    <div class="store-info">
+        <div><h4>Store <span>information</span></h4></div>
+        <div class="y">
+            <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+            <div><div><h6>Phone Number</h6></div>
+            <p>+1234567890</p></div>
+           
+        </div>
+        <div class="y">
+            <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+            <div><div><h6>Email Address</h6></div>
+            <p>Email:mail.example.com</p></div>
+        </div>
+        <div class="y">
+            <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+            <div><div><h6>Location</h6></div>
+            <p>Broome St, NY 10002,California, USA.</p></div>
+        </div>
+
+    
+</div>
+    
+<div class="flickr-post">
+     <div><h4>Flickr <span>Posts</span></h4></div>
+    <div class="photos">
+        <div class="x"><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t1.jpg" alt=""></div>
+        <div class="x"><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t2.jpg" alt=""></div>
+        <div class="x"><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t3.jpg" alt=""></div>
+        <div class="x"><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t4.jpg" alt=""></div>
+        <div class="x"><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t3.jpg" alt=""></div>
+        <div class="x"><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t1.jpg" alt=""></div>
+        <div class="x"><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t2.jpg" alt=""></div>
+        <div class="x"><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t3.jpg" alt=""></div>
+        <div class="x"><img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/t4.jpg" alt=""></div>
+    </div>
+    </div>
+    </div>
+    <div class="raw2">
+        <div class="sign-up">
+            <h1 style="color: white;">SIGN UP FOR NEWSLETTER !</h1>
+        </div>
+        <div style="display: flex;">
+             <input type="email" placeholder="<i class='icon-search'></i>"
+            <input type="submit" value="submit">
+        </div>
+    </div>
+    <div class="raw3"></div>
+    
+</div>
+
+    
+</body>
+</html>

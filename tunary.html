@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // a=500,b=15,c=950,d=10000
+        // // max = (a>b) ?  a:b;
+        //  max = (a>b) ?    (a>c)? (a>d) ?   a:c         :     (b>c)?    b:c;
+
+        // // max = (a>b) ?   (a>c)?  a:c :       b;  
+        // document.write(max);
+        a = 450;
+        b = 500;
+        c = 600;
+        d = 10;
+        // e = 60
+
+        // max = (a > b) ? (a > c) ? (a > d) ? a : d : (c > d) ? c : d : (b > c) ? (b > d) ? b : d : (c > d) ? c : d;
+
+        // document.write(max);
+        // result = (a>b) ? (a>c) ? (a>d) ? a : d  : (c>d) ? c : d : (b>c) ?(b>d) ? b :d :(c>d) ? c:d; 
+        // result  = (a>b) ? (a>c)? (a>d) ? (a>e)? a:e  : (d>e)?d :e : (c>d)? (c>e)? c:e : (d>e)? d:e: 
+        // result  = (a>b) ? (a>c)? (a>d) ? (a>e)? a:e  : (d>e)?d :e : (c>d)? (c>e)? c:e : (d>e)? d:e: (b>c)? (b>d)? (b>e)? b:e :(d>e)? d:e : (c>d)? (c>e)? c:e:(d>e)? d:e;
+        // document.write(result);
+        // a,b,c
+
+
+        // if(a>b){
+        //     // document.write(a);
+        //     if(a>c){
+        //         document.write(a);
+                 
+        //     }
+        //     else{
+        //             document.write(c);
+        //         }
+        // }
+        // else{
+        //     // document.write(b);
+        //     if(b>c){
+        //         document.write(b);
+        //     }
+        //     else{
+        //         document.write(c)
+        //     }
+        // }
+            if(a>b){
+                // document.write(a);
+                if(a>c){
+                    // document.write(a);
+                    if(a>d){
+                        document.write(a);
+
+                    }
+                    else{
+                        document.write(d);
+
+                    }
+                    
+                }
+                else{
+                    // document.write(c);
+                    if(c>d){
+                        document.write(c)
+                    }
+                    else{
+                        document.write(d)
+                    }
+                }
+            }
+            else{
+                // document.write(b)
+                if(b>c){
+                    // document.write(b);
+                    if(b>d){
+                        document.write(b);
+                    }
+                    else{
+                        document.write(d);
+                    }
+                }
+                else{
+                    // document.write(c);
+                    if(c>d){
+                        document.write(c);
+                    }
+                    else{
+                        document.write(d);
+                    }
+                }
+            }
+        
+    </script>
+    
+</body>
+</html>
+
+

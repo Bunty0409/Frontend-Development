@@ -1,0 +1,152 @@
+*{box-sizing: border-box;margin:0;padding: 0;}
+
+.header 
+{
+    height: 50px;
+    height: auto;
+    background:#000;
+
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 50px;
+    color:#fff;
+    
+}
+
+.header .blank1
+{
+    height: 50px;
+    background:transparent;
+    width: 16.66%;
+}
+
+.header .signIn
+{
+    height: 50px;
+    background:transparent;
+    width: 16.66%;
+
+    border-right:1px solid lightgray;
+}
+.header .signUp
+{
+    height: 50px;
+    background:transparent;
+    width: 16.66%;
+    border-right:1px solid lightgray;
+
+}
+.header .call
+{
+    height: 50px;
+    background:transparent;
+    width: 16.66%;
+    border-right:1px solid lightgray;
+
+}
+
+.header .info
+{
+    height: 50px;
+    background:transparent;
+    width: 16.66%;
+    border-right:1px solid lightgray;
+
+
+   
+}
+
+.header .blank2
+{
+    height: 50px;
+    background:transparent;
+    width: 16.66%;
+}
+
+.header i 
+{
+    color: #2fdab8;
+}
+
+.subheader
+{
+    /* height: 150px; */
+    /* background: gray; */
+    display: flex;
+    flex-wrap: wrap;
+
+    text-align: center;
+    line-height: 150px;
+}
+
+.subheader .search
+{
+    height: 150px;
+    width: 33.33%;
+    /* background: lightblue; */
+}
+
+.subheader .search input 
+{
+    height: 40px;
+    width: 70%;
+    border: 1px solid gray;
+}
+
+.subheader .search button 
+{   height: 40px;
+    width: 40px;
+    background: #2fdab8;
+    border: none;
+    color: #fff;
+}
+
+
+.subheader .logo
+{
+    height: 150px;
+    width: 33.33%;
+    /* background: cornflowerblue; */
+    /* position: relative; */
+}
+.subheader .logo h1 
+{
+    font-size: 45px;
+}
+.subheader .logo h1 .p 
+{
+    background: #000;
+    color: #fff;
+    padding: 10px 14px;
+}
+.subheader .logo i
+{
+    font-size: 34px;
+    position: absolute;
+    top:90px;
+    right:80px;
+}
+
+.subheader .icons
+{
+    height: 150px;
+    width: 33.33%;
+    /* background: lightblue; */
+}
+
+.subheader .icons .fa-brands
+{
+    background: #3b5998;
+    padding: 20px;
+}
+.logo h1 .o{
+    position: relative;
+    /* background-color: red; */
+    
+}
+.logo .o i{
+    position: absolute;
+    top: 25px;
+    left: 130px;
+}

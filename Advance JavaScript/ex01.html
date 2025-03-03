@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Table Example</title>
+</head>
+<body>
+  <table border="1">
+    <tr>
+     
+      <th>Product</th>
+      <th>quntity</th>
+      <th>price for unit</th>
+      <th>price subtotal</th>
+      <th></th>
+    </tr>
+    <tr>
+      
+      <td>product 1</td>
+      <td><select id="mySelect"><option value="0">select qty</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option></select></td>
+      <td><span>50</span><span>$</span></td>
+      <td id="subtotal">0<span>$</span></td>
+      <td><button id="removeBtn">remove</button></td>
+    </tr>
+    <tr>
+        <td>product 2</td>
+        <td><select id="mySelect1"><option value="0">select qty</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option></select></td>
+        <td><span>25</span><span>$</span></td>
+        <td id="subtotal1">0<span>$</span></td>
+        <td><button id="removeBtn1">remove</button></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td id="total">0<span>$</span></td>
+      <td></td>
+    </tr>
+   
+  </table>
+</body>
+</html>
+<script>
+
+ 
+ const selectElement = document.getElementById('mySelect');
+ const selectElement1 = document.getElementById('mySelect1');
+const subtotal = document.getElementById('subtotal')
+const subtotal1 = document.getElementById('subtotal1')
+const total = document.getElementById('total')
+const removeBtn = document.getElementById('removeBtn')
+const removeBtn1 = document.getElementById('removeBtn1')
+
+removeBtn.addEventListener('click',()=>{
+  subtotal.innerHTML="0"+"$"
+  selectElement.value="0"
+  sumTotal()
+})
+removeBtn1.addEventListener('click',()=>{
+  subtotal1.innerHTML="0"+"$"
+  selectElement1.value="0"
+  sumTotal()
+})
+
+
+
+selectElement.addEventListener('change', function() {
+  const selectedValue = selectElement.value;
+  subtotal.innerHTML= (selectedValue*50) +"$"
+  sumTotal()
+});
+selectElement1.addEventListener('change', function() {
+  const selectedValue1 = selectElement1.value;
+  subtotal1.innerHTML= (selectedValue1*25) +"$";
+  sumTotal();
+});
+
+
+function sumTotal(){
+  const subtotalValue = parseInt(subtotal.innerHTML);
+  const subtotalValue1 = parseInt(subtotal1.innerHTML);
+  const sum = subtotalValue+subtotalValue1;
+  total.innerHTML= sum + "$";
+
+}
+
+
+</script>

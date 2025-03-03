@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3 id="h"></h3>
+    <script>
+        count = setInterval("test()")
+        h3 = document.getElementById("h")
+        x = 0
+        function test() {
+            h3.innerHTML = ++x
+            if (x == 380) {
+
+                clearInterval(count)
+
+            }
+            //  h3.innerHTML= ++x
+
+        }
+        
+
+
+
+    </script>
+    <!-- <h2 id="c"></h2>
+
+    <script>
+
+        count = setInterval("test()",10)
+      
+      h2 = document.getElementById('c');
+      x=0;
+      
+      function test()
+      {
+        h2.innerHTML = ++x;//100
+        if(x==300)
+        {
+           clearInterval(count)
+        }
+      }
+      
+      
+
+
+    </script> -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Price: <input type="text" id="p" > 
+
+    <select name="" id="q" onchange="getprice()">
+        <option >--- select quantity ---</option>
+        <option >1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option >4</option>
+    </select>
+
+    <h3 id="res"></h3>
+
+    <script>
+
+        // NaN ==> NOT A NUMBER
+
+        price = document.getElementById('p');
+
+        quantity = document.getElementById('q');
+
+        totalPrice = document.getElementById('res');
+
+        // console.log(price);
+        // console.log(quantity);
+
+        // console.log(price.value * quantity.value)
+
+        function getprice()
+        {
+            totalPrice.innerHTML = 
+            (price.value * quantity.value)
+        }
+
+
+       
+
+
+    </script>
+    
+</body>
+</html>

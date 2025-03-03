@@ -1,0 +1,31 @@
+@media(max-width:900px)
+{
+    .header .blank1{width:100%;display: none;}
+    .header .signIn{width:50%}
+    .header .signUp{width:50%}
+    .header .call{width:50%}
+    .header .info{width:50%}
+    .header .blank2{width:100%;display: none;}
+
+    
+    .subheader .search {width: 100%;}
+    .subheader .logo {width: 50%;}
+    .subheader .icons {width: 50%;}
+
+
+
+}
+
+@media(max-width:453px)
+{
+    .header .blank1{width:100%;display: none;}
+    .header .signIn{width:100%}
+    .header .signUp{width:100%}
+    .header .call{width:100%}
+    .header .info{width:100%}
+    .header .blank2{width:100%;display: none;}
+
+    .subheader .search {width: 100%;}
+    .subheader .logo {width: 100%;}
+    .subheader .icons {width: 100%;}
+}

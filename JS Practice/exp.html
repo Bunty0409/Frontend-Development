@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Name: <input type="text" id="n1" onblur="abc(n1)"> <span id="note"></span>
+    <br>
+    <br>
+    mobile: <input type="text" id="m1" onblur="abc(m1)">
+    <br>
+    <br>
+    email: <input type="email" id="e1">
+
+
+
+    <script>
+        note = document.getElementById("note")
+        nm_exp= /^[a-zA-Z]+$/;
+        mo_exp = /^[1-9]+$/;
+        function abc(t) {
+            if (t.value == "") {
+                note.innerHTML = ("required*")
+                t.style.border = "2px solid red"
+                note.style.color = "red"
+                return false
+            }
+            else if(!nm_exp.test(t.value)){
+                note.innerHTML="only alfabet"
+                t.style.border = "2px solid red"
+                return false
+
+
+            }
+            
+            else{
+                t.style.border = "2px solid green"
+                note.innerHTML = ("")
+            }
+            
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{box-sizing: border-box;}
+        .main 
+        {
+            /* height: 300px; */
+            background: gray;
+            display: grid;
+
+            grid-template-columns:2fr 3fr 1fr 4fr ;
+            grid-template-columns:  2fr 2fr 2fr 2fr;
+            grid-template-rows:  200px auto;
+
+            gap: 10px;
+            padding: 15px;
+            
+        }
+
+        .main .x,.y,.y1
+        {
+           
+            border: 3px solid;
+        }
+
+        .test
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .test123
+        {
+            display: grid;
+            grid-template-rows: 50px 150px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="x">x1</div>
+
+        <div class="x test">
+            <div class="y">y1</div>
+            <div class="y">y2</div>
+            <div class="y">y3</div>
+        </div>
+
+        <div class="x test123">
+                <div class="y1">y11</div>
+                <div class="y1">y12</div>
+        </div>
+
+        <div class="x">x4</div>
+
+
+        <div class="x">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas consectetur velit tempora? Consequuntur officia, repellat quidem hic nostrum id voluptas. Molestiae magni reprehenderit cumque exercitationem dolores totam rem dolor temporibus!</div>
+        <div class="x">x2</div>
+        <div class="x">x3</div>
+        <div class="x">x4</div>
+    </div>
+
+  
+    
+</body>
+</html>
